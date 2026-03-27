@@ -74,10 +74,6 @@ export default function Home() {
               applications
             </h2>
 
-            <p className="mt-8 max-w-lg text-base leading-relaxed text-blue-100/85 md:text-lg">
-              I am a Fullstack Developer who focuses on building end-to-end web applications with high performance, scalable architecture, and intuitive user experiences. I enjoy transforming ideas into real, functional products while ensuring that every part of the system — from frontend to backend — works efficiently and reliably.
-            </p>
-
             <div className="mt-9 flex flex-wrap items-center gap-3">
               <a
                 href="#about"
@@ -126,17 +122,42 @@ export default function Home() {
         </section>
 
         <section id="about" className="mt-20 rounded-3xl border border-blue-200/15 bg-[#0b1234]/70 p-8 backdrop-blur">
-          <p className="text-xs uppercase tracking-[0.2em] text-blue-200/70">About Me</p>
-          <div className="mt-4 max-w-3xl space-y-4 text-base leading-relaxed text-blue-50/90 md:text-lg">
-            <p>
-              I am a Bachelor of Information Systems graduate from Universitas Gunadarma with a strong interest in software development. Currently, I am expanding my skills through an AI-Enhanced Fullstack JavaScript Bootcamp at Hacktiv8, where I build scalable and modern web applications using industry-relevant technologies.
-            </p>
-            <p>
-              I enjoy solving problems, writing clean and maintainable code, and continuously learning new technologies. My focus includes frontend and backend development, as well as integrating AI features into web applications to create smarter and more efficient digital solutions.
-            </p>
-            <p>
-              I am open to opportunities in Frontend, Backend, or Fullstack Development where I can contribute, grow, and create impactful products.
-            </p>
+          <div className="flex flex-wrap items-end justify-between gap-4">
+            <div>
+              <p className="text-sm uppercase tracking-[0.2em] text-blue-200/70">About Me</p>
+            </div>
+            <div className="flex flex-wrap gap-2 text-xs uppercase tracking-[0.14em] text-cyan-200/80">
+              <span className="rounded-full border border-cyan-300/30 bg-cyan-300/10 px-3 py-1">fullstack development</span>
+              <span className="rounded-full border border-blue-300/30 bg-blue-300/10 px-3 py-1">building web applications</span>
+              <span className="rounded-full border border-indigo-300/30 bg-indigo-300/10 px-3 py-1">continuous learning</span>
+            </div>
+          </div>
+
+          <div className="mt-8 grid gap-5 lg:grid-cols-12">
+            <article className="rounded-2xl border border-blue-200/15 bg-[#0f1a4a]/70 p-6 lg:col-span-7">
+              <p className="text-base leading-relaxed text-blue-50/90 md:text-lg">
+                I am a Fullstack Developer who focuses on building end-to-end web applications with high performance, scalable architecture, and intuitive user experiences. I enjoy transforming ideas into real, functional products while ensuring that every part of the system — from frontend to backend — works efficiently and reliably.
+              </p>
+              <p className="mt-4 text-base leading-relaxed text-blue-50/85 md:text-lg">
+                I am a Bachelor of Information Systems graduate from Universitas Gunadarma with a strong interest in software development. Currently, I am expanding my skills through an AI-Enhanced Fullstack JavaScript Bootcamp at Hacktiv8, where I build modern and scalable web applications using industry-relevant technologies.
+              </p>
+            </article>
+
+            <aside className="space-y-4 lg:col-span-5">
+              <div className="rounded-2xl border border-blue-200/15 bg-[#101d52]/75 p-5 transition hover:border-cyan-300/45">
+                <p className="text-[12px] uppercase tracking-[0.16em] text-cyan-200/75">What I Enjoy</p>
+                <p className="mt-2 text-base md:text-md leading-relaxed text-blue-55/85">
+                  I enjoy solving problems, writing clean and maintainable code, and continuously learning new technologies. My focus includes both frontend and backend development, as well as integrating AI features into web applications to create smarter and more efficient digital solutions.
+                </p>
+              </div>
+
+              <div className="rounded-2xl border border-blue-200/15 bg-[#101d52]/75 p-5 transition hover:border-cyan-300/45">
+                <p className="text-[12px] uppercase tracking-[0.16em] text-cyan-200/75">Open To</p>
+                <p className="mt-2 text-base md:text-md leading-relaxed text-blue-55/85">
+                  I am open to opportunities where I can contribute my skills and grow as a developer, and I am excited to connect with others in the tech community to share knowledge and collaborate on innovative projects.
+                </p>
+              </div>
+            </aside>
           </div>
         </section>
 
