@@ -182,40 +182,43 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="portfolio" className="mt-16 rounded-3xl border border-blue-200/15 bg-[#0b1234]/70 p-8 backdrop-blur">
-          <p className="text-xs uppercase tracking-[0.2em] text-blue-200/70">Portfolio Actions</p>
-          <div className="mt-4 flex flex-wrap gap-3">
+        <section id="contact" className="mt-16 rounded-3xl border border-cyan-200/30 bg-[linear-gradient(145deg,rgba(18,34,90,0.86),rgba(9,16,48,0.92))] p-8 shadow-[0_20px_60px_rgba(8,145,178,0.2)] backdrop-blur">
+          <p className="text-xs uppercase tracking-[0.2em] text-cyan-200/80">Contact</p>
+          <h3 className="mt-2 max-w-xl text-2xl font-semibold tracking-tight text-white md:text-3xl">Let's turn ideas into reality.</h3>
+          <p className="mt-3 max-w-2xl text-sm leading-relaxed text-blue-100/80 md:text-base">I’m open to collaboration, freelance projects, and full-time opportunities. If you have an idea or project in mind, feel free to reach out — I’d love to connect and discuss how we can build something great together.</p>
+
+          <div className="mt-7 grid gap-4 md:grid-cols-3">
             <a
-              href="/CV_Admiral-Nursyafaat.pdf"
-              download
-              className="rounded-lg border border-blue-200/35 bg-blue-400/10 px-5 py-3 text-sm font-semibold uppercase tracking-[0.12em] text-blue-50 transition hover:border-blue-100/60 hover:bg-blue-300/20"
+              href="mailto:admiral.nursyafaat@gmail.com"
+              className="group rounded-2xl border border-blue-100/20 bg-[#0a143d]/70 p-4 transition hover:-translate-y-1 hover:border-cyan-200/55 hover:shadow-[0_12px_30px_rgba(56,189,248,0.2)]"
             >
-              Download CV
+              <p className="text-[11px] uppercase tracking-[0.16em] text-cyan-200/80">Email</p>
+              <p className="mt-2 text-sm font-medium text-blue-50">admiral.nursyafaat@gmail.com</p>
+              <p className="mt-3 text-xs font-semibold uppercase tracking-[0.14em] text-cyan-200/85 transition group-hover:text-cyan-100">Send Message</p>
             </a>
+
             <a
-              href="https://github.com/admiralemir"
+              href="https://wa.me/6287878474306"
               target="_blank"
               rel="noreferrer"
-              className="rounded-lg border border-blue-200/35 bg-blue-400/10 px-5 py-3 text-sm font-semibold uppercase tracking-[0.12em] text-blue-50 transition hover:border-blue-100/60 hover:bg-blue-300/20"
+              className="group rounded-2xl border border-blue-100/20 bg-[#0a143d]/70 p-4 transition hover:-translate-y-1 hover:border-cyan-200/55 hover:shadow-[0_12px_30px_rgba(56,189,248,0.2)]"
             >
-              GitHub
+              <p className="text-[11px] uppercase tracking-[0.16em] text-cyan-200/80">WhatsApp</p>
+              <p className="mt-2 text-sm font-medium text-blue-50">+62 878-7847-4306</p>
+                <p className="mt-3 text-xs font-semibold uppercase tracking-[0.14em] text-cyan-200/85 transition group-hover:text-cyan-100">Chat Now</p>
             </a>
+
             <a
               href="https://www.linkedin.com/in/admiral-nurysafaat/"
               target="_blank"
               rel="noreferrer"
-              className="rounded-lg border border-blue-200/35 bg-blue-400/10 px-5 py-3 text-sm font-semibold uppercase tracking-[0.12em] text-blue-50 transition hover:border-blue-100/60 hover:bg-blue-300/20"
+              className="group rounded-2xl border border-blue-100/20 bg-[#0a143d]/70 p-4 transition hover:-translate-y-1 hover:border-cyan-200/55 hover:shadow-[0_12px_30px_rgba(56,189,248,0.2)]"
             >
-              LinkedIn
+              <p className="text-[11px] uppercase tracking-[0.16em] text-cyan-200/80">LinkedIn</p>
+              <p className="mt-2 text-sm font-medium text-blue-50">@admiral-nurysafaat</p>
+              <p className="mt-3 text-xs font-semibold uppercase tracking-[0.14em] text-cyan-200/85 transition group-hover:text-cyan-100">View Profile</p>
             </a>
           </div>
-        </section>
-
-        <section id="contact" className="mt-16 border-t border-blue-200/20 pt-8">
-          <p className="text-xs uppercase tracking-[0.2em] text-blue-200/70">Contact</p>
-          <p className="mt-3 text-sm text-blue-100/85">Email: admiral.nursyafaat@gmail.com</p>
-          <p className="text-sm text-blue-100/85">WhatsApp: +62 878-7847-4306</p>
-          <p className="text-sm text-blue-100/85">Instagram: @admiiraal</p>
         </section>
       </div>
     </main>
