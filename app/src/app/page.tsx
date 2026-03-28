@@ -3,16 +3,22 @@ const projectItems = [
     title: "Car Rent for Employee",
     desc: "Developed a role-based internal car rental management system with employee booking and approval workflows.",
     stack: "React.js, Express.js, Google-gen AI, Google OAuth",
+    features: ["Role-based access control", "Booking approval workflow", "Google OAuth authentication"],
+    viewCode: "https://github.com/admiralemir/individual-project-admiral",
   },
   {
     title: "SubTrack8",
     desc: "Collaborated in a team to develop a full-stack subscription management platform using Next.js and MongoDB.",
     stack: "Next.js, React.js, Socket.IO, MongoDB",
+    features: ["Real-time updates with Socket.IO", "Subscription tracking dashboard", "MongoDB-backed data management"],
+    viewCode: "https://github.com/admiralemir/SubTrack8-Final-Project",
   },
   {
     title: "HackQuiz8",
     desc: "Built a server-rendered learning platform using MVC architecture with session-based authentication.",
     stack: "Node.js, EJS, Sequelize, Json Web Token (JWT)",
+    features: ["Session-based authentication", "MVC architecture pattern", "Quiz and learning flow management"],
+    viewCode: "https://github.com/admiralemir/HackQuiz8",
   },
 ];
 
@@ -54,6 +60,7 @@ export default function Home() {
         />
       ))}
 
+      {/* Main content container */}
       <div className="relative mx-auto flex w-full max-w-6xl flex-col px-6 pb-20 pt-8 md:px-10">
         <header className="mb-10 flex flex-wrap items-center justify-between gap-4 rounded-2xl border border-blue-200/15 bg-[#0a1030]/60 px-5 py-4 shadow-[0_10px_40px_rgba(2,8,30,0.5)] backdrop-blur">
           <div>
@@ -62,6 +69,7 @@ export default function Home() {
           </div>
         </header>
 
+        {/* Hero Section */}
         <section className="grid items-center gap-12 lg:grid-cols-[1.02fr_0.98fr]">
           <div>
             <p className="mb-4 text-xs uppercase tracking-[0.2em] text-blue-100/70">Jakarta, Indonesia</p>
@@ -74,6 +82,7 @@ export default function Home() {
               applications
             </h2>
 
+            {/* Call to Action Buttons */}
             <div className="mt-9 flex flex-wrap items-center gap-3">
               <a
                 href="#about"
@@ -96,6 +105,7 @@ export default function Home() {
             </div>
           </div>
 
+          {/* Core Focus Section */}
           <div className="relative mx-auto w-full max-w-xl">
             <div className="pointer-events-none absolute -inset-7 rounded-full border border-blue-300/25 opacity-60 animate-[spin_24s_linear_infinite]" />
             <div className="pointer-events-none absolute -inset-3 rounded-full border border-cyan-300/30 opacity-75 animate-[spin_18s_linear_infinite_reverse]" />
@@ -121,6 +131,7 @@ export default function Home() {
           </div>
         </section>
 
+        {/* About me */}
         <section id="about" className="mt-20 rounded-3xl border border-blue-200/15 bg-[#0b1234]/70 p-8 backdrop-blur">
           <div className="flex flex-wrap items-end justify-between gap-4">
             <div>
@@ -136,7 +147,7 @@ export default function Home() {
           <div className="mt-8 grid gap-5 lg:grid-cols-12">
             <article className="rounded-2xl border border-blue-200/15 bg-[#0f1a4a]/70 p-6 lg:col-span-7">
               <p className="text-base leading-relaxed text-blue-50/90 md:text-lg">
-                I am a Fullstack Developer who focuses on building end-to-end web applications with high performance, scalable architecture, and intuitive user experiences. I enjoy transforming ideas into real, functional products while ensuring that every part of the system — from frontend to backend — works efficiently and reliably.
+                My name is Admiral Nursyafaat Udhma, but everyone calls me Emir. I am a Fullstack Developer who focuses on building end-to-end web applications with high performance, scalable architecture, and intuitive user experiences. I enjoy transforming ideas into real, functional products while ensuring that every part of the system — from frontend to backend — works efficiently and reliably.
               </p>
               <p className="mt-4 text-base leading-relaxed text-blue-50/85 md:text-lg">
                 I am a Bachelor of Information Systems graduate from Universitas Gunadarma with a strong interest in software development. Currently, I am expanding my skills through an AI-Enhanced Fullstack JavaScript Bootcamp at Hacktiv8, where I build modern and scalable web applications using industry-relevant technologies.
@@ -163,20 +174,52 @@ export default function Home() {
 
         <section id="projects" className="mt-16">
           <p className="text-xs uppercase tracking-[0.2em] text-blue-200/70">My Projects</p>
-          <div className="mt-6 grid gap-4 md:grid-cols-3">
+          <h3 className="mt-2 text-2xl font-semibold tracking-tight text-white md:text-3xl">Selected Work</h3>
+          <p className="mt-2 max-w-2xl text-sm leading-relaxed text-blue-100/75 md:text-base">
+            A few projects where I focus on clean architecture, strong user experience, and practical product delivery.
+          </p>
+
+          <div className="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
             {projectItems.map((item) => (
               <article
                 key={item.title}
-                className="group rounded-2xl border border-blue-200/20 bg-[#0b1234]/75 p-5 transition duration-300 hover:-translate-y-1 hover:border-cyan-200/65 hover:shadow-[0_16px_40px_rgba(37,99,235,0.35)]"
+                className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-blue-200/20 bg-[linear-gradient(160deg,rgba(14,26,69,0.88),rgba(10,17,50,0.9))] p-6 transition-all duration-300 ease-out hover:-translate-y-1.5 hover:scale-[1.015] hover:border-cyan-200/65 hover:shadow-[0_20px_55px_rgba(56,189,248,0.2)]"
               >
-                <h3 className="text-lg font-semibold text-white">{item.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-blue-100/80">
+                <div className="pointer-events-none absolute right-0 top-0 h-20 w-20 translate-x-6 -translate-y-6 rounded-full bg-cyan-300/10 blur-2xl transition duration-500 group-hover:scale-125" />
+
+                <h4 className="text-xl font-semibold leading-tight text-white">{item.title}</h4>
+                <p className="mt-3 text-sm leading-relaxed text-blue-100/80">
                   {item.desc}
                 </p>
-                <p className="mt-4 text-xs uppercase tracking-[0.12em] text-cyan-200/80">
+
+                <div className="mt-5">
+                  <p className="text-[11px] uppercase tracking-[0.16em] text-cyan-200/80">Key Features</p>
+                  <ul className="mt-2 space-y-2">
+                    {item.features.map((feature) => (
+                      <li key={feature} className="flex items-start gap-2 text-sm text-blue-100/80">
+                        <span className="mt-[7px] h-1.5 w-1.5 rounded-full bg-cyan-300" />
+                        <span>{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <p className="mt-5 text-xs uppercase tracking-[0.12em] text-cyan-200/80">
                   {item.stack}
                 </p>
-                <div className="mt-5 h-[2px] w-0 bg-gradient-to-r from-cyan-300 to-blue-400 transition-all duration-300 group-hover:w-full" />
+
+                <div className="mt-6 flex flex-wrap gap-2">
+                  <a
+                    href={item.viewCode}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="rounded-lg border border-blue-200/35 bg-blue-300/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.12em] text-blue-50 transition hover:border-blue-100/60 hover:bg-blue-200/15"
+                  >
+                    View Code
+                  </a>
+                </div>
+
+                <div className="mt-5 h-[2px] w-8 bg-gradient-to-r from-cyan-300 to-blue-400 transition-all duration-300 group-hover:w-full" />
               </article>
             ))}
           </div>
@@ -187,10 +230,10 @@ export default function Home() {
           <h3 className="mt-2 max-w-xl text-2xl font-semibold tracking-tight text-white md:text-3xl">Let's turn ideas into reality.</h3>
           <p className="mt-3 max-w-2xl text-sm leading-relaxed text-blue-100/80 md:text-base">I’m open to collaboration, freelance projects, and full-time opportunities. If you have an idea or project in mind, feel free to reach out — I’d love to connect and discuss how we can build something great together.</p>
 
-          <div className="mt-7 grid gap-4 md:grid-cols-3">
+          <div className="mt-7 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
             <a
               href="mailto:admiral.nursyafaat@gmail.com"
-              className="group rounded-2xl border border-blue-100/20 bg-[#0a143d]/70 p-4 transition hover:-translate-y-1 hover:border-cyan-200/55 hover:shadow-[0_12px_30px_rgba(56,189,248,0.2)]"
+              className="group h-full rounded-2xl border border-blue-100/20 bg-[#0a143d]/70 p-4 transition hover:-translate-y-1 hover:border-cyan-200/55 hover:shadow-[0_12px_30px_rgba(56,189,248,0.2)]"
             >
               <p className="text-[11px] uppercase tracking-[0.16em] text-cyan-200/80">Email</p>
               <p className="mt-2 text-sm font-medium text-blue-50">admiral.nursyafaat@gmail.com</p>
@@ -201,21 +244,32 @@ export default function Home() {
               href="https://wa.me/6287878474306"
               target="_blank"
               rel="noreferrer"
-              className="group rounded-2xl border border-blue-100/20 bg-[#0a143d]/70 p-4 transition hover:-translate-y-1 hover:border-cyan-200/55 hover:shadow-[0_12px_30px_rgba(56,189,248,0.2)]"
+              className="group h-full rounded-2xl border border-blue-100/20 bg-[#0a143d]/70 p-4 transition hover:-translate-y-1 hover:border-cyan-200/55 hover:shadow-[0_12px_30px_rgba(56,189,248,0.2)]"
             >
               <p className="text-[11px] uppercase tracking-[0.16em] text-cyan-200/80">WhatsApp</p>
               <p className="mt-2 text-sm font-medium text-blue-50">+62 878-7847-4306</p>
-                <p className="mt-3 text-xs font-semibold uppercase tracking-[0.14em] text-cyan-200/85 transition group-hover:text-cyan-100">Chat Now</p>
+              <p className="mt-3 text-xs font-semibold uppercase tracking-[0.14em] text-cyan-200/85 transition group-hover:text-cyan-100">Chat Now</p>
             </a>
 
             <a
               href="https://www.linkedin.com/in/admiral-nurysafaat/"
               target="_blank"
               rel="noreferrer"
-              className="group rounded-2xl border border-blue-100/20 bg-[#0a143d]/70 p-4 transition hover:-translate-y-1 hover:border-cyan-200/55 hover:shadow-[0_12px_30px_rgba(56,189,248,0.2)]"
+              className="group h-full rounded-2xl border border-blue-100/20 bg-[#0a143d]/70 p-4 transition hover:-translate-y-1 hover:border-cyan-200/55 hover:shadow-[0_12px_30px_rgba(56,189,248,0.2)]"
             >
               <p className="text-[11px] uppercase tracking-[0.16em] text-cyan-200/80">LinkedIn</p>
               <p className="mt-2 text-sm font-medium text-blue-50">@admiral-nurysafaat</p>
+              <p className="mt-3 text-xs font-semibold uppercase tracking-[0.14em] text-cyan-200/85 transition group-hover:text-cyan-100">View Profile</p>
+            </a>
+
+            <a
+              href="https://github.com/admiralemir"
+              target="_blank"
+              rel="noreferrer"
+              className="group h-full rounded-2xl border border-blue-100/20 bg-[#0a143d]/70 p-4 transition hover:-translate-y-1 hover:border-cyan-200/55 hover:shadow-[0_12px_30px_rgba(56,189,248,0.2)]"
+            >
+              <p className="text-[11px] uppercase tracking-[0.16em] text-cyan-200/80">GitHub</p>
+              <p className="mt-2 text-sm font-medium text-blue-50">@admiralemir</p>
               <p className="mt-3 text-xs font-semibold uppercase tracking-[0.14em] text-cyan-200/85 transition group-hover:text-cyan-100">View Profile</p>
             </a>
           </div>
