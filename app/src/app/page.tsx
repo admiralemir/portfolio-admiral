@@ -230,7 +230,7 @@ export default function Home() {
           <h3 className="mt-2 max-w-xl text-2xl font-semibold tracking-tight text-white md:text-3xl">Let's turn ideas into reality.</h3>
           <p className="mt-3 max-w-2xl text-sm leading-relaxed text-blue-100/80 md:text-base">I’m open to collaboration, freelance projects, and full-time opportunities. If you have an idea or project in mind, feel free to reach out — I’d love to connect and discuss how we can build something great together.</p>
 
-          <div className="mt-7 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+          <div className="mt-7 grid gap-4 md:grid-cols-3">
             <a
               href="mailto:admiral.nursyafaat@gmail.com"
               className="group h-full rounded-2xl border border-blue-100/20 bg-[#0a143d]/70 p-4 transition hover:-translate-y-1 hover:border-cyan-200/55 hover:shadow-[0_12px_30px_rgba(56,189,248,0.2)]"
@@ -262,16 +262,6 @@ export default function Home() {
               <p className="mt-3 text-xs font-semibold uppercase tracking-[0.14em] text-cyan-200/85 transition group-hover:text-cyan-100">View Profile</p>
             </a>
 
-            <a
-              href="https://github.com/admiralemir"
-              target="_blank"
-              rel="noreferrer"
-              className="group h-full rounded-2xl border border-blue-100/20 bg-[#0a143d]/70 p-4 transition hover:-translate-y-1 hover:border-cyan-200/55 hover:shadow-[0_12px_30px_rgba(56,189,248,0.2)]"
-            >
-              <p className="text-[11px] uppercase tracking-[0.16em] text-cyan-200/80">GitHub</p>
-              <p className="mt-2 text-sm font-medium text-blue-50">@admiralemir</p>
-              <p className="mt-3 text-xs font-semibold uppercase tracking-[0.14em] text-cyan-200/85 transition group-hover:text-cyan-100">View Profile</p>
-            </a>
           </div>
         </section>
       </div>
