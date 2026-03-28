@@ -215,6 +215,7 @@ export default function Home() {
           <p className="text-xs uppercase tracking-[0.2em] text-blue-200/70">Contact</p>
           <p className="mt-3 text-sm text-blue-100/85">Email: admiral.nursyafaat@gmail.com</p>
           <p className="text-sm text-blue-100/85">WhatsApp: +62 878-7847-4306</p>
+          <p className="text-sm text-blue-100/85">Instagram: @admiiraal</p>
         </section>
       </div>
     </main>
